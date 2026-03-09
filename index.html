@@ -10,6 +10,45 @@
   <meta property="og:description" content="Australian consultancy in cloud, software development, testing, and architecture." />
   <meta property="og:type" content="website" />
   <link rel="stylesheet" href="styles.css" />
+  
+  <!-- Structured Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "TechnologyCrowd Pty Ltd",
+    "description": "Australian consulting services in cloud engineering, cloud architecture, software development, and quality engineering with 20+ years of experience",
+    "url": "https://technologycrowd.com.au",
+    "email": "contact@technologycrowd.com.au",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "AU"
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "Australia"
+    },
+    "serviceType": [
+      "Cloud Consulting",
+      "Azure Architecture",
+      "Cloud Migration",
+      "Software Development",
+      "Quality Engineering",
+      "Test Automation",
+      "Architecture Advisory",
+      "Technical Leadership"
+    ],
+    "knowsAbout": [
+      "Cloud Architecture",
+      "Azure",
+      "Software Development",
+      "Test Automation",
+      "DevOps",
+      "CI/CD",
+      "Quality Engineering"
+    ]
+  }
+  </script>
 </head>
 <body>
   <header class="site-header">
@@ -74,22 +113,43 @@
         <p class="section-intro">
           Built for Australian clients that need experienced leadership without the overhead of a large consultancy.
         </p>
-        <div class="cards">
-          <article class="card">
+        
+        <div class="service-detail">
+          <article class="service-card">
             <h3>Cloud Consulting</h3>
-            <p>Cloud architecture, landing zones, security, identity, migrations, platform engineering, and operational readiness.</p>
+            <ul>
+              <li>Azure architecture</li>
+              <li>Cloud migrations</li>
+              <li>Security & identity</li>
+              <li>Cost optimisation</li>
+            </ul>
           </article>
-          <article class="card">
+
+          <article class="service-card">
             <h3>Software Development</h3>
-            <p>Modern application development, web platforms, API integration, delivery standards, and engineering uplift.</p>
+            <ul>
+              <li>Modern application architecture</li>
+              <li>API & integration design</li>
+              <li>Engineering best practices</li>
+            </ul>
           </article>
-          <article class="card">
-            <h3>Software Testing & Quality Engineering</h3>
-            <p>Test strategy, test automation, CI/CD quality gates, regression approaches, and confidence for releases.</p>
+
+          <article class="service-card">
+            <h3>Quality Engineering</h3>
+            <ul>
+              <li>Test automation strategy</li>
+              <li>CI/CD quality gates</li>
+              <li>Test frameworks</li>
+            </ul>
           </article>
-          <article class="card">
-            <h3>Architecture & Advisory</h3>
-            <p>Solution architecture, cloud architecture, delivery troubleshooting, technical leadership, and roadmap guidance.</p>
+
+          <article class="service-card">
+            <h3>Architecture Advisory</h3>
+            <ul>
+              <li>Solution architecture reviews</li>
+              <li>Delivery troubleshooting</li>
+              <li>Technical leadership</li>
+            </ul>
           </article>
         </div>
       </div>
@@ -148,24 +208,48 @@
       <div class="container split">
         <div>
           <p class="eyebrow">Contact</p>
-          <h2>Technology Crowd Pty Ltd</h2>
-          <p>Serving clients across Australia.</p>
-          <p>This site is ready for your real business contact details and domain.</p>
+          <h2>Get in Touch</h2>
+          
+          <p>
+            Need help with cloud architecture, software development,
+            or testing strategy?
+          </p>
+
+          <p>
+            Reach out to discuss how Technology Crowd can support
+            your next project.
+          </p>
+
+          <div class="contact-details">
+            <p>
+              <strong>Email:</strong> 
+              <a href="mailto:contact@technologycrowd.com.au">
+                contact@technologycrowd.com.au
+              </a>
+            </p>
+
+            <p>
+              <strong>LinkedIn:</strong>
+              <a href="https://linkedin.com/in/ravi-yadav-2438484" target="_blank" rel="noopener">
+                View Profile
+              </a>
+            </p>
+          </div>
         </div>
-        <form class="contact-card" onsubmit="event.preventDefault(); window.location.href='mailto:ravs_avs@yahoo.com?subject=' + encodeURIComponent('Enquiry from Technology Crowd website') + '&body=' + encodeURIComponent('Hi Ravi,%0D%0A%0D%0AI would like to discuss:%0D%0A');">
+        <form class="contact-card" onsubmit="event.preventDefault(); window.location.href='mailto:contact@technologycrowd.com.au?subject=' + encodeURIComponent('Enquiry from Technology Crowd website') + '&body=' + encodeURIComponent('Hi,%0D%0A%0D%0AI would like to discuss:%0D%0A');">
           <label>
             <span>Name</span>
-            <input type="text" placeholder="Your name" />
+            <input type="text" placeholder="Your name" required />
           </label>
           <label>
             <span>Email</span>
-            <input type="email" placeholder="you@company.com" />
+            <input type="email" placeholder="you@company.com" required />
           </label>
           <label>
             <span>Message</span>
-            <textarea rows="5" placeholder="Tell us about your project or challenge"></textarea>
+            <textarea rows="5" placeholder="Tell us about your project or challenge" required></textarea>
           </label>
-          <button class="btn btn-primary" type="submit">Email Technology Crowd</button>
+          <button class="btn btn-primary" type="submit">Send Message</button>
         </form>
       </div>
     </section>

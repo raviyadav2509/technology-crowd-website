@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://technologycrowd.com.au/sitemap.xml
